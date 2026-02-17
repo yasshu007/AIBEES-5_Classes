@@ -15,9 +15,9 @@ st.title("type exit or quit to end:")
 st.balloons()
 
 print("--- Welcome to the Personalized Chatbot (type 'exit' or 'quit' to end) --- ")
-
+user_input = st.text_input("You: ")
 while True:
-    user_input = st.text_input("You: ")
+    #user_input = st.text_input("You: ")
     if user_input.lower() in ["exit", "quit"]:
         print("Goodbye!")
         break
@@ -26,10 +26,10 @@ while True:
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": user_input}
     ]
-    response = llm.invoke(messages)
-    print(f"Bot: {response.content}")
+    #response = llm.invoke(messages)
+    #print(f"Bot: {response.content}")
 
     st.write("**Answer:**")
-    st.write(response.content)
+    #st.write(response.content)
     st.balloons()
 
