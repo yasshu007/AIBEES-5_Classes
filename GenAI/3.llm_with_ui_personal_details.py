@@ -11,15 +11,17 @@ llm = ChatGoogleGenerativeAI(
     # max_output_tokens=100,
 )
 
-st.title("Yash: LLM Calculator")
+st.title("Yash: LLM Details Checkpoint")
 st.balloons()
 
-question = st.text_input("Enter your numbers for calculation:")
+name = st.text_input("Enter your Name:")
+age = st.number_input("Enter your age:")
+expertise = st.text_input("Enter your area of expertise:")
 
 if st.button("Get Answer"):
     messages = [
-        {"role": "system", "content": "You are a helpful calculator."},  
-        {"role": "user", "content": question}
+        {"role": "system", "content": "You are a helpful assitant."},  
+        {"role": "user", "content": name + "who has experience in " + expertise }
         ]
     st.write("**Answer:**")
     st.write(llm.invoke(messages).content)
