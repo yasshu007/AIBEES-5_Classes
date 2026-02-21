@@ -13,9 +13,9 @@ llm = ChatGoogleGenerativeAI(
             # Prepare messages system and user
 messages = [
     {"role": "system", "content": "You are a helpful assistant."},
-    #{"role": "user", "content": "Who is Vikesh Pulimamidi?"}
+    {"role": "user", "content": "Who is Vikesh Pulimamidi?"}
     #{"role": "user", "content": "Who is Gadiraju Yashwanth Kumar Raju?"}
-    {"role": "user", "content": "Who is Movva Raiteja?"}
+    #{"role": "user", "content": "Who is Movva Raiteja?"}
            ]
 
 # Invoke the model
