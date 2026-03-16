@@ -1,4 +1,7 @@
 .venv
 .env
 GenAI/.env
+<<<<<<< HEAD
 GenAI/Incident_summarization_lab/__pycache__
+=======
+>>>>>>> cb93cd2e59d8eae960bead14798ae876a4e5e567

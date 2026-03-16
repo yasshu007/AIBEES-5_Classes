@@ -21,4 +21,8 @@ message = [
 ]
 
 result = llm.invoke(message).content
+<<<<<<< HEAD
 print(result)
+=======
+print(result)
+>>>>>>> cb93cd2e59d8eae960bead14798ae876a4e5e567
